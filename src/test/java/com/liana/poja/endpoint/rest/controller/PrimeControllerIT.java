@@ -24,6 +24,6 @@ public class PrimeControllerIT extends FacadeIT {
         String primeNumberString = primeController.getPrimeNumber();
         BigInteger primeNumber = new BigInteger(primeNumberString);
 
-        Assertions.assertEquals(10000, primeNumber.bitLength());
+        Assertions.assertEquals(512, primeNumber.bitLength());
     }
 }
